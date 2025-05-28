@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    gap: 30px;
+    border-radius: 5px;
+    background-color: var(--bgSoft);
+}
+.github, .google{
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}

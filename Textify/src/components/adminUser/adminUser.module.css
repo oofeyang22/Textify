@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.container h1{
+    margin-bottom: 8px;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+}
+
+.details{
+    display: inherit;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.details span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    
+}

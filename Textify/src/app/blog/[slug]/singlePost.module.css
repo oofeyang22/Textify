@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+.imgContainer{
+    max-width: 800px;
+    height: 400px;                                                              ;
+    position: relative;
+    margin-bottom: 0;
+}
+.img{
+    object-fit: cover;
+
+}
+.text-container{
+   display:flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 0;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.detail{
+    display: flex;
+
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.detailText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

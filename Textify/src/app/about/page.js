@@ -12,7 +12,7 @@ const about = () => {
                 <h2 className={styles.subtitle}>About Agency</h2>
                 <h1 className={styles.title}>We create digital products that impact society positively</h1>
                 <p> We craft digital experiences that captivate, engage, and deliver results.
-                     From concept to creation, we're your partners in digital transformation.
+                     From concept to creation, we are your partners in digital transformation.
                 </p>
                 <div className={styles.boxes}>
                     <div className={styles.box}>
@@ -30,7 +30,7 @@ const about = () => {
                 </div>
             </div>
             <div className={styles.imgContainer}>
-                <Image src="/About.png" width={400} height={400}/>
+                <Image src="/About.png" width={400} height={400} alt="about"/>
             </div>
         </div>
     )

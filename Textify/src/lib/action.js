@@ -6,10 +6,7 @@ import { connectToDb } from "./utils"
 import bcrypt from "bcryptjs"
 import { revalidatePath } from "next/cache"
 
-export const handleGithubLogin = async () => {
 
-    await signIn("github")
-}
 export const handleGoogleLogin = async () => {
 
     await signIn("google")
@@ -27,7 +24,7 @@ export const register = async (previousState, formData) => {
         return {error: "passwords don't match"}
     }
     try{
-        connectToDb();
+        await connectToDb();
         const user = await User.findOne({ username })
         if (user) {
             return {error: "username already exists"}
@@ -70,7 +67,7 @@ export const addPost = async (previousState, formData) => {
 
 
     try{
-        connectToDb();
+        await connectToDb();
         const newPost = new Post({
             title, desc, slug, userId
         });
@@ -89,7 +86,7 @@ export const deletePost = async (formData)  => {
     const { id } = Object.fromEntries(formData);
 
     try{
-        connectToDb();
+        await connectToDb();
 
         await Post.findByIdAndDelete(id);
         console.log("deleted from db");
@@ -107,7 +104,7 @@ export const addUser = async (previousState, formData) => {
 
 
     try{
-        connectToDb();
+        await connectToDb();
         const newUser = new User({
             username, email, password, img
         });
@@ -125,7 +122,7 @@ export const deleteUser = async (formData) => {
     const { id } = Object.fromEntries(formData);
 
     try{
-        connectToDb();
+        await connectToDb();
 
         await Post.deleteMany({ userId: id })
         await User.findByIdAndDelete(id);

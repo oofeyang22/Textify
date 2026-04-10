@@ -10,10 +10,7 @@ const Login = () => {
       <form action={handleGoogleLogin}>
         <button className={styles.google}>Login With Google</button>
       </form>
-        <form action={handleGithubLogin}>
 
-          <button className={styles.github}>Login With Github</button>
-        </form>
         <LoginForm/>
       </div>
 

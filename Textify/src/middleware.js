@@ -9,6 +9,3 @@ export const config = {
 
 
 
-//ANu5MWjW9ALQa2HK
-//olaitanferanmi41
-//mongodb+srv://olaitanferanmi41:ANu5MWjW9ALQa2HK@cluster0.cd4jz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

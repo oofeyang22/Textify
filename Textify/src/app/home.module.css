@@ -40,6 +40,14 @@
 }
 
 @media (max-width: 768px){
+    .title{
+        font-size: 26px;
+        max-width: 300px;
+    }
+    .description{
+        font-size: 14px;
+        max-width: 320px;
+    }
     .imgContainer{
         display: none;
     }

@@ -18,3 +18,13 @@
     padding: 20px;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .container{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .wrapper{
+        width: 320px;
+    }
+}

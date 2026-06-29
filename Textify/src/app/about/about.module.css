@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    gap: 100px;
+    gap: 200px;
 }
 
 .textContainer{
@@ -38,7 +38,23 @@
 }
 
 @media (max-width: 768px){
+    .title{
+        font-size: 30px;
+        max-width: 320px;
+    }
+    .textContainer p{
+        max-width: 320px;
+    }
     .imgContainer{
         display: none;
+    }
+    .boxes{
+          display: flex;
+          flex-wrap: wrap; /* Enforces wrapping */
+          gap: 10px;
+    }
+
+    .box{
+        flex-basis: 48%;
     }
 }

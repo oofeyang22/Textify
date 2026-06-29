@@ -14,9 +14,7 @@ export default function Home() {
           <button className={styles.button}>Learn More</button>
           <button className={styles.button}>Contact us</button>
         </div>
-        <div className={styles.brands}>
-          <Image src="/Ford.png" alt="brand" width={50} height={50} className={styles.brandImg}/>
-        </div>
+
       </div>
       <div className={styles.imgContainer}>
         <Image src="/Hero.png" alt="hero" width={400} height={400} className={styles.heroImg}/>

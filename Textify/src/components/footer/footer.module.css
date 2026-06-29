@@ -13,3 +13,13 @@
 .text{
     font-size: 12px;
 }
+
+@media (max-width: 768px){
+    .logo{
+        margin-left: 4rem;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
